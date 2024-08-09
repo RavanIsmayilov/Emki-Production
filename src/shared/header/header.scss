@@ -1,0 +1,338 @@
+@import "../../responsive/mixins";
+
+.header{
+    background: linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);
+    border: 0px;
+
+    &_action{
+        display: flex;
+    }
+
+    &_lang{
+        font-family:  Arial, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        box-sizing: border-box;
+        cursor: text;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 4px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        margin-right: 10px;
+
+        &-option{
+            color: #000;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #101426;
+        border-radius: 0 0 24px 24px;
+        border-top: 0;
+        margin: auto !important;
+        padding: 25px 40px;
+        width: 82% ;
+
+        @include mobile{
+            width: 100%;
+            border-radius: 0px;
+            padding: 16px 0px;
+        }
+    }
+
+    &_logo{
+
+        @include mobile{
+            width: 80px;
+        }
+    }
+
+    &_lang{
+        
+    }
+
+    &_btns{
+        display: flex;
+        gap: 1px;
+
+    }
+
+    &_buybtn{
+        width: 160px;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        background-color: #fff;
+        border: none;
+        border-radius: 8px;
+        color: #151a30;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:hover{
+            color: #fff;
+            background-color: #db1374;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+
+    &_btn{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        background-color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        @include mobile{
+            margin-right: 14px;
+        }
+
+        &:hover{
+            background-color: #db1374;
+        }
+
+
+        &-icon{
+
+        }
+    }
+}
+
+.nav{
+    display: flex;
+    margin-right: 220px;
+
+    @include mobile{
+        display: none;
+    }
+
+    &_lists{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 180px;
+        
+
+        &_link{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 16px;
+            border-radius: 20px;
+        }
+
+        &_item{
+            color: rgb(255, 255, 255);
+            font-family:'Euclid Circular A', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-decoration: none;
+
+            &:hover{
+                transition: all 0.5s;
+                color: #db1374 ;
+            }
+
+        }
+    }
+}
+
+.tickets{
+    width: 534px;
+    height: 508.6px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    top: 90px;
+    max-height: 508.6px; 
+    overflow-y: auto;
+
+    @include mobile{
+        width: 375px;
+        top: 48px;
+        padding-top: 64px;
+        border-bottom-left-radius: 50px;
+    }
+
+    &_x{
+        width: 25px;
+        height: 25px;
+
+        &_btn{
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 12px;
+            position: absolute;
+            right: 31.6px;
+            top: 16.8px;
+
+            @include mobile{
+                right: 8.6px;
+                top: 10.8px;
+            }
+        }
+    }
+
+    &_main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include mobile{
+        }
+    }
+
+    &_card{
+        height: 104px;
+        margin-bottom: 16px;
+        border: 0;
+        box-shadow: 0;
+        cursor: pointer;
+        display: flex;
+        height: 104px;
+        transition: all .5s;
+
+        @include mobile{
+            height: 68px;
+        }
+
+        &-img{
+            border-radius: 16px;
+            height: 104px ;
+            transition: all .5s;
+            width: 104px ;
+
+            @include mobile{
+                width: 68px;
+                height: 68px;
+            }
+        }
+    }
+
+    &_texts{
+        width: 335px;
+        border: 1px solid #e4e9f2;
+        border-radius: 16px;
+        padding: 16px 24px;
+        transition: all .5s;
+
+        @include mobile{
+            width: 276px;
+            padding: 10px 12px;
+        }
+
+        &-head{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-end{
+            display: flex;
+        }
+    }
+
+    &_name{
+        color: rgb(25, 32, 56);
+        font-family: Euclid Circular A;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        @include mobile{
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 8px;
+        }
+    }
+
+    &_price{
+        color: rgb(222, 52, 135);
+        font-family: Euclid Circular A;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        @include mobile{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+    &_date{
+        color: rgb(46, 58, 89);
+        font-family: Euclid Circular A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        @include mobile{
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+
+    &_dot{
+        margin: 0 8px;
+        transition: all .5s;
+        width: 6px;
+    }
+
+    &_place{
+        color: rgb(46, 58, 89);
+        font-family: Euclid Circular A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        @include mobile{
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+
+}

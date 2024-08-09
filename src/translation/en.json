@@ -1,0 +1,16 @@
+{
+    "header": {
+      "home": "Home",
+      "events": "Events",
+      "blog": "Blog",
+      "sponsors": "Sponsors",
+      "about_us": "About us",
+      "buy_ticket": "Buy Ticket"
+    },
+    "home": {
+      "title": "Elevate Your Concert Experience",
+      "subtitle": "Welcome to the ultimate destination for music enthusiasts and concert-goers! At EMKI Production, we're passionate about bringing you the very best in live music experiences. Whether you're a die-hard fan or a casual listener, we've got something special in store for you.",
+      "event_button": "Event"
+    }
+  }
+  

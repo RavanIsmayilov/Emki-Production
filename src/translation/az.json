@@ -1,0 +1,16 @@
+{
+    "header": {
+      "home": "Ana Səhifə",
+      "events": "Tədbirlər",
+      "blog": "Blog",
+      "sponsors": "Sponsorlar",
+      "about_us": "Haqqımızda",
+      "buy_ticket": "Bilet Al"
+    },
+    "home": {
+      "title": "Konsert Təcrübənizi Yüksəldin",
+      "subtitle": "Musiqi həvəskarları və konsert iştirakçıları üçün ən son məkanı təqdim edirik! EMKI Production-da, sizə canlı musiqi təcrübələrini ən yaxşı şəkildə təqdim etməyə çalışırıq. İstər qatı pərəstişkar olun, istərsə də təsadüfi dinləyici, sizin üçün xüsusi bir şeyimiz var.",
+      "event_button": "Tədbir"
+    }
+  }
+  

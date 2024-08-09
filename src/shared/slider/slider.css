@@ -1,0 +1,24 @@
+.slider-container {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: 110px;
+}
+@media (max-width: 575px) {
+  .slider-container {
+    display: none;
+  }
+}
+.slider-container-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.slick-slide-img {
+  width: 150px;
+  height: 208px;
+  border-radius: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=slider.css.map */

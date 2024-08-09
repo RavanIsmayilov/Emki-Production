@@ -1,0 +1,114 @@
+@import "../../responsive/mixins";
+
+.dropdown {
+    display: none;
+
+    @include mobile{
+        display: block;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 14px;
+        z-index: 1;
+    }
+
+    &_action{
+        width: 54.9px;
+        height: 47.9px;
+        display: flex;
+        border: 1px solid rgb(197, 206, 224);
+        margin-bottom: 30px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-left: 17.4px;
+    }
+
+    &_lang{
+            width: 100%;
+            color: rgb(21, 26, 48);
+            font-family:  Arial, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            box-sizing: border-box;
+            cursor: text;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+
+        &-option{
+            color: #000;
+            box-sizing: border-box;
+            font-size: 16px;
+            cursor: pointer;
+            }
+        
+    }
+
+
+  }
+
+.dropdown-icon{
+    cursor: pointer;
+
+    @include mobile{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+  }
+  
+  .dropdown-button {
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-list {
+    width: 247.2px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+    top: 51px;
+    left: -14.8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 80px 16px 16px;
+    margin: 0;
+    transition: all 1s ease;
+    transition-property: left;
+  }
+  
+  .dropdown-list.open {
+    left: 0;
+}
+
+  .dropdown-list li {
+    text-decoration: none;
+    color: #151a30;
+    padding: 10px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  .dropdown-list li a {
+    list-style: none;
+    text-decoration: none;
+    color: #151a30;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .dropdown-list li a:hover {
+    color: #db1374 ;
+    transition: all 0.3s;
+  }
