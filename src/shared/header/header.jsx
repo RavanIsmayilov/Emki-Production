@@ -9,6 +9,7 @@ import TicketImage2 from "../../assets/images/ticket image 2.png"
 import TicketImage3 from "../../assets/images/ticket image 3.png"
 import TicketDot from "../../assets/icons/ticket dot.svg"
 import TicketX from "../../assets/icons/letter-x.png"
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
           <nav className="nav">
             <ul className="nav_lists">
               <li className="nav_lists_link">
-                <a href="#" className="nav_lists_item">{t('header.home')}</a>
+                <Link to="/home" className="nav_lists_item">{t('header.home')}</Link>
               </li>
               <li className="nav_lists_link">
                 <a href="#" className="nav_lists_item">{t('header.events')}</a>
@@ -50,7 +51,7 @@ const Header = () => {
                 <a href="#" className="nav_lists_item">{t('header.sponsors')}</a>
               </li>
               <li className="nav_lists_link">
-                <a href="#" className="nav_lists_item">{t('header.about_us')}</a>
+                <Link to="/about" className="nav_lists_item">{t('header.about_us')}</Link>
               </li>
             </ul>
           </nav>

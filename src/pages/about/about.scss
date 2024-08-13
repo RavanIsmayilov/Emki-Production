@@ -1,0 +1,210 @@
+@import "../../responsive/mixins";
+
+.about{ 
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 32px 32px;
+
+    @include mobile{
+        box-sizing: border-box;
+
+    }
+
+    &_head{
+        background: linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+        padding-bottom: 64px;
+
+        @include mobile{
+            padding: 30px 0px 64px 14px;
+        }
+    }
+
+
+    &_slider{
+
+        position: relative;
+
+        &-item{
+
+        }
+
+        &-img{
+            width: 602px;
+            border-radius: 16px;
+            box-sizing:border-box;
+            padding: 0px 50px;
+
+            @include mobile{
+                width: 173px;
+                height: 187px;
+                padding: 0;
+                
+            }
+        }
+
+        &_buttons{
+            display: flex;
+        }
+
+        &-prev{
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 49%;
+            left: 32.6%;
+            background: none;
+            border: 1px solid #fff;
+            cursor: pointer;
+
+            
+            @include mobile{
+                bottom: 46.1%;
+                left: 2.2%;
+            }
+         
+
+            &-icon{
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &-next{
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 49%;
+            left: 66%;
+            background: none;
+            border: 1px solid #fff;
+            cursor: pointer;
+
+            @include mobile{
+                bottom: 46.1%;
+                left: 94.7%;
+            }
+
+
+            &-icon{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    &_end{
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(16, 20, 38);
+        
+
+        
+        @include mobile{
+        }
+
+        &-title{
+            color: #fff;
+            display: inline-block;
+            font-family: Euclid Circular A, sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 32px;
+            margin-left: 161px;
+
+            @include mobile{
+                margin-left: 0;
+            }
+        }
+    }
+
+    &_layout{
+        width: 80%;
+        display: flex;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+      
+
+        
+        @include mobile{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    &_texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    &_title{
+        color: #fff;
+        font-family: Euclid Circular A, sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 64px;
+        margin-bottom: 12px;
+
+    }
+
+    &_subtitle{
+        color: #fff;
+        margin-bottom: 24px;
+        font-family: Euclid Circular A, sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+
+    &_paragraf{
+        color: #fff;
+        font-family: Euclid Circular A, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 24px;
+
+        @include mobile{
+            width: 538px;
+        }
+    }
+
+    &_video{
+        width: 623px;
+        border-radius: 16px;
+
+        @include mobile{
+            width: 549px !important;
+            height: 360px;
+        }
+        
+
+        &_frame{
+            width: 609px;
+            border-radius: 16px;
+
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+}
+

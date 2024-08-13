@@ -196,9 +196,9 @@
             border: none;
             padding: 12px;
             position: absolute;
-            right: 31.6px;
-            top: 16.8px;
-
+            right: 1.6px;
+            top: -4.2px;
+            
             @include mobile{
                 right: 8.6px;
                 top: 10.8px;
@@ -249,6 +249,10 @@
         border-radius: 16px;
         padding: 16px 24px;
         transition: all .5s;
+
+        &:hover{
+            background-color: #ddddddaf;
+        }
 
         @include mobile{
             width: 276px;

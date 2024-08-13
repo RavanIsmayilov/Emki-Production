@@ -28,6 +28,7 @@ export default function HomeSlider() {
     adaptiveHeight: true,
   };
 
+
   return (
     <div className="slider-container">
       <Slider {...settings}>

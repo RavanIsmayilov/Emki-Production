@@ -171,8 +171,8 @@
   border: none;
   padding: 12px;
   position: absolute;
-  right: 31.6px;
-  top: 16.8px;
+  right: 1.6px;
+  top: -4.2px;
 }
 @media (max-width: 575px) {
   .tickets_x_btn {
@@ -219,6 +219,9 @@
   border-radius: 16px;
   padding: 16px 24px;
   transition: all 0.5s;
+}
+.tickets_texts:hover {
+  background-color: rgba(221, 221, 221, 0.6862745098);
 }
 @media (max-width: 575px) {
   .tickets_texts {
