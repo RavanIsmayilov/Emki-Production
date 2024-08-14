@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
-  const [isSectionOpen , setIsSectionOpen] = useState(false)
+  const [isSectionOpen, setIsSectionOpen] = useState(false)
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -32,17 +32,15 @@ const Header = () => {
     <>
       <header className="header">
         <div className="header_main">
-          <DropdownMenu/>
-
+          <DropdownMenu />
           <img className="header_logo" src={HeaderLogo} alt="HeaderLogo" />
-
           <nav className="nav">
             <ul className="nav_lists">
               <li className="nav_lists_link">
                 <Link to="/home" className="nav_lists_item">{t('header.home')}</Link>
               </li>
               <li className="nav_lists_link">
-                <a href="#" className="nav_lists_item">{t('header.events')}</a>
+                <a href="/events" className="nav_lists_item">{t('header.events')}</a>
               </li>
               <li className="nav_lists_link">
                 <a href="#" className="nav_lists_item">{t('header.blog')}</a>
@@ -72,108 +70,108 @@ const Header = () => {
       </header>
 
       {isSectionOpen && (
-       <>
-        <div className="tickets">
-          <button onClick={closeSection} className="tickets_x_btn">
-            <img className="tickets_x" src={TicketX} alt="TicketX" />
-          </button>
+        <>
+          <div className="tickets">
+            <button onClick={closeSection} className="tickets_x_btn">
+              <img className="tickets_x" src={TicketX} alt="TicketX" />
+            </button>
 
-          <div className="tickets_main">
-            <div className="tickets_card">
-              <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
+            <div className="tickets_main">
+              <div className="tickets_card">
+                <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
 
-              <div className="tickets_texts">
-                <div className="tickets_texts-head">
-                  <span className="tickets_name">Kıraç</span>
-                  <span className="tickets_price"> 49 - 199₼ </span>
+                <div className="tickets_texts">
+                  <div className="tickets_texts-head">
+                    <span className="tickets_name">Kıraç</span>
+                    <span className="tickets_price"> 49 - 199₼ </span>
+                  </div>
+
+                  <div className="tickets_texts-end">
+                    <span className="tickets_date">20.10.2024</span>
+                    <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
+                    <span className="tickets_place">Heydər Əliyev Sarayı</span>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div className="tickets_texts-end">
-                  <span className="tickets_date">20.10.2024</span>
-                  <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
-                  <span className="tickets_place">Heydər Əliyev Sarayı</span>
+            <div className="tickets_main">
+              <div className="tickets_card">
+                <img className="tickets_card-img" src={TicketImage1} alt="TicketImage1" />
+
+                <div className="tickets_texts">
+                  <div className="tickets_texts-head">
+                    <span className="tickets_name">Kıraç</span>
+                    <span className="tickets_price"> 49 - 199₼ </span>
+                  </div>
+
+                  <div className="tickets_texts-end">
+                    <span className="tickets_date">20.10.2024</span>
+                    <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
+                    <span className="tickets_place">Heydər Əliyev Sarayı</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tickets_main">
+              <div className="tickets_card">
+                <img className="tickets_card-img" src={TicketImage2} alt="TicketImage2" />
+
+                <div className="tickets_texts">
+                  <div className="tickets_texts-head">
+                    <span className="tickets_name">Kıraç</span>
+                    <span className="tickets_price"> 49 - 199₼ </span>
+                  </div>
+
+                  <div className="tickets_texts-end">
+                    <span className="tickets_date">20.10.2024</span>
+                    <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
+                    <span className="tickets_place">Heydər Əliyev Sarayı</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tickets_main">
+              <div className="tickets_card">
+                <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
+
+                <div className="tickets_texts">
+                  <div className="tickets_texts-head">
+                    <span className="tickets_name">Kıraç</span>
+                    <span className="tickets_price"> 49 - 199₼ </span>
+                  </div>
+
+                  <div className="tickets_texts-end">
+                    <span className="tickets_date">20.10.2024</span>
+                    <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
+                    <span className="tickets_place">Heydər Əliyev Sarayı</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tickets_main">
+              <div className="tickets_card">
+                <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
+
+                <div className="tickets_texts">
+                  <div className="tickets_texts-head">
+                    <span className="tickets_name">Kıraç</span>
+                    <span className="tickets_price"> 49 - 199₼ </span>
+                  </div>
+
+                  <div className="tickets_texts-end">
+                    <span className="tickets_date">20.10.2024</span>
+                    <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
+                    <span className="tickets_place">Heydər Əliyev Sarayı</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="tickets_main">
-            <div className="tickets_card">
-              <img className="tickets_card-img" src={TicketImage1} alt="TicketImage1" />
-
-              <div className="tickets_texts">
-                <div className="tickets_texts-head">
-                  <span className="tickets_name">Kıraç</span>
-                  <span className="tickets_price"> 49 - 199₼ </span>
-                </div>
-
-                <div className="tickets_texts-end">
-                  <span className="tickets_date">20.10.2024</span>
-                  <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
-                  <span className="tickets_place">Heydər Əliyev Sarayı</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="tickets_main">
-            <div className="tickets_card">
-              <img className="tickets_card-img" src={TicketImage2} alt="TicketImage2" />
-
-              <div className="tickets_texts">
-                <div className="tickets_texts-head">
-                  <span className="tickets_name">Kıraç</span>
-                  <span className="tickets_price"> 49 - 199₼ </span>
-                </div>
-
-                <div className="tickets_texts-end">
-                  <span className="tickets_date">20.10.2024</span>
-                  <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
-                  <span className="tickets_place">Heydər Əliyev Sarayı</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="tickets_main">
-            <div className="tickets_card">
-              <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
-
-              <div className="tickets_texts">
-                <div className="tickets_texts-head">
-                  <span className="tickets_name">Kıraç</span>
-                  <span className="tickets_price"> 49 - 199₼ </span>
-                </div>
-
-                <div className="tickets_texts-end">
-                  <span className="tickets_date">20.10.2024</span>
-                  <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
-                  <span className="tickets_place">Heydər Əliyev Sarayı</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="tickets_main">
-            <div className="tickets_card">
-              <img className="tickets_card-img" src={TicketImage3} alt="TicketImage3" />
-
-              <div className="tickets_texts">
-                <div className="tickets_texts-head">
-                  <span className="tickets_name">Kıraç</span>
-                  <span className="tickets_price"> 49 - 199₼ </span>
-                </div>
-
-                <div className="tickets_texts-end">
-                  <span className="tickets_date">20.10.2024</span>
-                  <img className="tickets_dot" src={TicketDot} alt="TicketDot" />
-                  <span className="tickets_place">Heydər Əliyev Sarayı</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       </>
+        </>
       )}
     </>
   );

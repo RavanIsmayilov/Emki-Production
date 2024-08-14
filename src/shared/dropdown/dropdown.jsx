@@ -41,7 +41,7 @@ const DropdownMenu = () => {
                 <a href="#">{t('header.home')}</a>
             </li>
             <li >
-                <a href="#" >{t('header.events')}</a>
+                <a href="/events" >{t('header.events')}</a>
             </li>
             <li>
                 <a href="#" >{t('header.blog')}</a>
