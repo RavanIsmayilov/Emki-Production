@@ -15,6 +15,7 @@
   width: 82%;
   margin-left: auto;
   margin-right: auto;
+  background: none;
 }
 @media (max-width: 575px) {
   .home_section {
@@ -28,6 +29,7 @@
 }
 .home_swiper {
   width: 40%;
+  background: none;
 }
 @media (max-width: 575px) {
   .home_swiper {
@@ -37,6 +39,7 @@
 }
 .home_info {
   width: 48%;
+  background: none;
 }
 @media (max-width: 575px) {
   .home_info {
@@ -52,6 +55,7 @@
   line-height: 84px;
   margin-bottom: 48px;
   margin-right: 40px;
+  background: none;
 }
 @media (max-width: 575px) {
   .home_info-title {
@@ -67,6 +71,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  background: none;
 }
 @media (max-width: 575px) {
   .home_info-subtitle {

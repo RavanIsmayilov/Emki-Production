@@ -1,18 +1,17 @@
 import './home.css';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Header from '../../shared/header/header';
 import BtnIcon from '../../assets/icons/svgexport-6.svg';
 import HomeSlider from '../../shared/slider/slider';
 import ResSlider from '../../shared/resSlider/resSlider';
+import Section from '../../shared/haveproject/section';
 
 const Home = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <Header />
-
+    
       <section className="home">
         <div className="home_section">
           <div className="home_info">
@@ -27,6 +26,9 @@ const Home = () => {
             <HomeSlider />
             <ResSlider/>
           </div>
+        </div>
+        <div>
+          <Section/>
         </div>
       </section>
     </>
