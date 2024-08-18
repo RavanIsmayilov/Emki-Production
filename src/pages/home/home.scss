@@ -1,4 +1,4 @@
-@import "../responsive/mixins";
+@import "../../responsive/mixins";
 
 .home{
     background: linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);
@@ -9,6 +9,89 @@
         border-radius: 0px;
     }
 
+    &_sponsor{
+        background-color: #101426;
+        box-sizing: border-box;
+        padding-bottom: 80px;
+    
+    }
+
+    &_container{
+        width: 1567px;
+        margin: 0px auto;
+        box-sizing: border-box;
+        border: 1px solid rgb(25, 32, 56);
+        border-radius: 32px;
+        background: rgb(21, 26, 48);
+
+        @include mobile{
+            width: 100%;
+        }
+
+        .box {
+            border-radius: 32px;
+            padding: 40px 56px;
+
+            @include mobile{
+                padding: 40px 26px;
+            }
+        
+            .box-body {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background: none;
+
+              @include mobile{
+                flex-direction: column;
+                gap: 70px;
+              }
+        
+              .box-title {
+                width: 100%;
+                max-width: 42%;
+                background: none;
+
+                @include mobile{
+                    max-width: 100%;
+                }
+        
+                h1 {
+                  color: #ede9f2;
+                  font-size: 48px;
+                  line-height: 64px;
+                  margin-bottom: 16px;
+                  font-weight: 500;
+                  background: none;
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                    sans-serif;
+                }
+        
+                span {
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                  background: none;
+                }
+              }
+              img {
+                margin-left: 40px;
+                max-width: 653px;
+                width: 100%;
+                height: auto;
+                border-radius: 16px;
+
+                @include mobile{
+                    margin-left: 0px;
+                }
+              }
+            }
+          }
+    }
+
     &_section{
         display: flex;
         align-items: center;
@@ -16,6 +99,7 @@
         width: 82%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 50px !important;
 
         @include mobile{
             width: 100%;
@@ -28,10 +112,12 @@
     }
 
     &_swiper{
-      width: 40%;
+      width: 40%;    
+      height: 560px;
 
       @include mobile{
         width: 100%;
+        height: 100%;
         margin-top: 30px;
       }
     }
@@ -116,7 +202,87 @@
         }
     }
 
-    &_swiper{
+    &_components{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        overflow-x: auto;
+        width: 1668px;
 
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+.ourValues{
+    box-sizing: border-box;
+    background-color: rgb(16, 20, 38);
+    padding: 16px;
+    padding-bottom: 100px;
+
+    .values{
+        color: rgb(255, 255, 255);
+        padding-bottom: 40px;
+        font-size: 23px;
+        font-family:Euclid Circular A,sans-serif;
+
+        
+    }
+
+    .categories{
+        background: linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+        padding: 70px 30px;
+        border-radius: 10px;
+
+        .trust{
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+        gap:25px;
+        }
+
+        h2{
+            padding-bottom: 20px;
+            color: white;
+            font-family:Euclid Circular A,sans-serif;
+            font-weight:500;
+            font-size: 23px;
+            border-bottom: 1px solid #e32682;
+
+        }
+        p{
+            color: white;
+            font-size: 18px;
+            font-family:Euclid Circular A,sans-serif;
+            padding-top: 15px;
+
+        }
+
+        .trancparency{
+            display: flex;
+            justify-content: space-between;
+            align-items:center ;
+            gap:25px;
+        }
+
+        .innovation{
+        display: flex;
+        justify-content: space-between;
+        align-items:center ; 
+        gap:25px;
+        padding-top: 40px;
+
+        }
+        .collaboration{
+            display: flex;
+            justify-content: space-between;
+            align-items:center ; 
+            gap:25px;
+            padding-top: 40px;
+
+
+        }
     }
 }

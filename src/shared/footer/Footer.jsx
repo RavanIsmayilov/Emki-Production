@@ -1,14 +1,14 @@
+import './footer.css'
 import React from 'react'
 import Logo from '../../assets/images/event/Emki.png'
 import { Link } from 'react-router-dom'
-import './footer.scss'
 
 const Footer = () => {
     return (
 
         <>
             <div className='footer-margin-top'>
-                <div className='container'>
+                <div className='footer'>
                     <div className='footer-body'>
                         <img src={Logo} alt="" srcset="" />
                         <div className='footer-text'>

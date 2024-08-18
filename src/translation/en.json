@@ -7,10 +7,18 @@
       "about_us": "About us",
       "buy_ticket": "Buy Ticket"
     },
+    
     "home": {
       "title": "Elevate Your Concert Experience",
       "subtitle": "Welcome to the ultimate destination for music enthusiasts and concert-goers! At EMKI Production, we're passionate about bringing you the very best in live music experiences. Whether you're a die-hard fan or a casual listener, we've got something special in store for you.",
       "event_button": "Event"
+    },
+
+    "about": {
+      "title": "Unleash Your Event's Potential: ",
+      "subtitle": "Elevate Your Streaming with Our Expertise!",
+      "paragraph": "Show your event to the world through any platform. We are leaders in streaming and broadcast services for events, offering consulting services and development of complete systems for our clients in event broadcasting.",
+      "events_title": "Our Events"
     }
   }
   

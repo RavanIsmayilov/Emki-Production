@@ -1,9 +1,9 @@
 .slider-container {
   width: 600px;
-  height: 500px;
+  height: 608px;
   overflow: hidden;
   margin: 0 auto;
-  margin-left: 110px;
+  margin-left: 46px;
 }
 @media (max-width: 575px) {
   .slider-container {
@@ -11,14 +11,13 @@
   }
 }
 .slider-container-images {
-  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .slick-slide-img {
-  width: 150px;
+  width: 164px;
   height: 208px;
   border-radius: 10px;
   cursor: pointer;

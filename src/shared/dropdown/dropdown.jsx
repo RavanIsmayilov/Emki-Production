@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import DropDownOpen from "../../assets/icons/X-icon3.svg"
 import DropDownClosed from "../../assets/icons/dropdown.svg"
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const DropdownMenu = () => {
 
   return (
     <div className="dropdown">
-       <img
+      <img
         onClick={toggleDropdown}
         className="dropdown-icon"
         src={isOpen ? DropDownOpen : DropDownClosed}
@@ -38,19 +39,19 @@ const DropdownMenu = () => {
         </div>
 
             <li>
-                <a href="#">{t('header.home')}</a>
+                <Link to="/home">{t('header.home')}</Link>
             </li>
             <li >
-                <a href="/events" >{t('header.events')}</a>
+                <Link to="/events" >{t('header.events')}</Link>
             </li>
             <li>
-                <a href="#" >{t('header.blog')}</a>
+                <Link to="/blogs" >{t('header.blog')}</Link>
             </li>
             <li>
-                <a href="#" >{t('header.sponsors')}</a>
+                <Link to="/sponsor" >{t('header.sponsors')}</Link>
             </li>
             <li>
-                <a href="#">{t('header.about_us')}</a>
+                <Link to="/about">{t('header.about_us')}</Link>
             </li>
         </ul>
     </>

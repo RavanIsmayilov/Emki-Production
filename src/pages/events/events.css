@@ -1,0 +1,266 @@
+.section {
+  background-color: #101426;
+  padding-top: 50px;
+}
+
+.esection {
+  box-sizing: border-box;
+  padding-top: 50px;
+  background-color: #101426;
+}
+
+.container {
+  max-width: 1499.9px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  .container {
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+}
+.container_title {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 62px;
+}
+.container_events {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  overflow-x: auto;
+  gap: 33px;
+  width: 1668px;
+}
+@media (max-width: 575px) {
+  .container_events {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.container_events .card {
+  position: relative;
+  width: 375px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  box-shadow: 0;
+  transition: transform 0.3s ease;
+}
+.container_events .card:hover .image img {
+  opacity: 0.6;
+}
+.container_events .card:hover .image button {
+  opacity: 1;
+}
+.container_events .card:hover .events_text {
+  background-color: #ffffff;
+}
+.container_events .card:hover .events_text .events_text_name h2 {
+  color: #101426;
+}
+.container_events .card:hover .events_text .events_loc p {
+  color: #101426;
+}
+.container_events .card .image {
+  position: relative;
+  position: relative;
+  width: 364px;
+}
+.container_events .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.3s ease;
+  height: 375px;
+}
+.container_events .card .image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  color: #101426;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.container_events .card .events_text {
+  display: block;
+  padding: 16px;
+  background-color: #101426;
+  border: 1px solid #192038;
+  border-radius: 24px;
+  height: 103px;
+  margin-top: 3px;
+  color: #fff;
+}
+.container_events .card .events_text .events_text_name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background: none;
+}
+.container_events .card .events_text .events_text_name h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 700;
+  background: none;
+}
+.container_events .card .events_text .events_text_name p {
+  margin: 0;
+  font-size: 20px;
+  color: #e32682;
+  font-weight: 500;
+  line-height: 28px;
+  background: none;
+}
+.container_events .card .events_text .events_loc {
+  display: flex;
+  background: none;
+}
+.container_events .card .events_text .events_loc .img {
+  width: 6px;
+  margin: 0 8px;
+  color: #fff;
+  background: none;
+}
+.container_events .card .events_text .events_loc p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background: none;
+}
+.container .text {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 62px;
+}
+@media (max-width: 575px) {
+  .container .text {
+    padding: 0px 14.7px;
+  }
+}
+.container .eventscard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+@media (max-width: 575px) {
+  .container .eventscard {
+    justify-content: center;
+  }
+}
+.container .eventscard .card {
+  position: relative;
+  width: 375px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  box-shadow: 0;
+  transition: transform 0.3s ease;
+}
+.container .eventscard .card:hover .image img {
+  opacity: 0.6;
+}
+.container .eventscard .card:hover .image button {
+  opacity: 1;
+}
+.container .eventscard .card:hover .events_text {
+  background-color: #ffffff;
+}
+.container .eventscard .card:hover .events_text .events_text_name h2 {
+  color: #101426;
+}
+.container .eventscard .card:hover .events_text .events_loc p {
+  color: #101426;
+}
+.container .eventscard .card .image {
+  position: relative;
+}
+.container .eventscard .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.3s ease;
+  height: 375px;
+}
+.container .eventscard .card .image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  color: #101426;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.container .eventscard .card .events_text {
+  display: block;
+  padding: 16px;
+  background-color: #101426;
+  border: 1px solid #192038;
+  border-radius: 24px;
+  height: 103px;
+  margin-top: 3px;
+  color: #fff;
+}
+.container .eventscard .card .events_text .events_text_name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background: none;
+}
+.container .eventscard .card .events_text .events_text_name h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 700;
+  background: none;
+}
+.container .eventscard .card .events_text .events_text_name p {
+  margin: 0;
+  font-size: 20px;
+  color: #e32682;
+  font-weight: 500;
+  line-height: 28px;
+  background: none;
+}
+.container .eventscard .card .events_text .events_loc {
+  display: flex;
+  background: none;
+}
+.container .eventscard .card .events_text .events_loc .img {
+  width: 6px;
+  margin: 0 8px;
+  color: #fff;
+  background: none;
+}
+.container .eventscard .card .events_text .events_loc p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background: none;
+}/*# sourceMappingURL=events.css.map */

@@ -1,12 +1,17 @@
 import React from 'react'
 import { slider } from '../../data/Events'
 import icon from '../../assets/images/event/icon.svg'
-const EventsCart = () => {
-    return (
 
+const EventsCart = () => {
+    const events = slider || []; 
+
+    return (
+    <>
+        <span className='text'>Events</span>
         <div className='eventscard'>
-            {slider.map((item, index) => (
-                <>
+            {events.length > 0 ? (
+                events.map((item, index) => (
+                <>                    
                     <div key={index} className='card'>
                         <div className='image'>
                             <img src={item.image} alt={item.name} />
@@ -25,8 +30,13 @@ const EventsCart = () => {
                         </div>
                     </div>
                 </>
-            ))}
+                ))
+            ) : (
+                <p>No events available.</p> 
+            )}
+
         </div>
+    </>
     )
 }
 

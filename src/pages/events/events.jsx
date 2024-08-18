@@ -1,15 +1,17 @@
+import './events.css'
 import React from 'react'
 import EventsCart from '../../shared/eventsCart/EventsCart'
-import './events.scss'
-const events = () => {
+
+const Events = () => {
     return (
         <>
-            <div className='container'>
-                <div className='text'>Events</div>
-                <EventsCart/>
+            <div className='section'>
+                <div className='container'>
+                    <EventsCart/>
+                </div>
             </div>
         </>
     )
 }
 
-export default events
+export default Events

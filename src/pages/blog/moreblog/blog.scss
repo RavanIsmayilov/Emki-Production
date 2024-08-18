@@ -1,0 +1,55 @@
+@import "../../../responsive/mixins";
+
+.blog{
+    background: rgb(16, 20, 38);
+    box-sizing: border-box;
+    padding-top: 50px;
+
+    &_head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-texts{
+            width: 1312px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+
+            @include mobile{
+                width: 500px;
+            }
+        }
+
+        &_image{
+            width: 1319.8px;
+            height: 900px;
+            border-radius: 28px;
+
+            @include mobile{
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+        &_title{
+            color: rgb(197, 206, 224);
+            font-family: Euclid Circular A;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 40px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &_subtitle{
+            color: rgb(197, 206, 224);
+            font-family: Euclid Circular A;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+}
