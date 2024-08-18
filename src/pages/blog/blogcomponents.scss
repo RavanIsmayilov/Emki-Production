@@ -60,7 +60,6 @@ $background-color_3: rgba(247, 249, 252, 1);
 }
 
 .blogimg {
-    width: 452.9px;
 
     &_link{
         text-decoration: none;
@@ -73,7 +72,7 @@ $background-color_3: rgba(247, 249, 252, 1);
     }
     
     img{
-        width: 100%;
+        width: 453px;
         border: 0;
         transition: 0.4s all;
     }
@@ -176,7 +175,7 @@ $background-color_3: rgba(247, 249, 252, 1);
     .blogimg {
         position: relative;
         img{
-            width: 100%;
+            width: 540px;
             border: 0;
         }
     }

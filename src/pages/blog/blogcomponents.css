@@ -46,9 +46,6 @@
   gap: 30px;
 }
 
-.blogimg {
-  width: 452.9px;
-}
 .blogimg_link {
   text-decoration: none;
   font-style: Headline/H4-M;
@@ -59,7 +56,7 @@
   color: rgb(247, 249, 252);
 }
 .blogimg img {
-  width: 100%;
+  width: 453px;
   border: 0;
   transition: 0.4s all;
 }
@@ -153,7 +150,7 @@
     position: relative;
   }
   .blogimg img {
-    width: 100%;
+    width: 540px;
     border: 0;
   }
   .head {
