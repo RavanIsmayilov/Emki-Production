@@ -5,6 +5,7 @@ import About from "./pages/about/about";
 import Events from "./pages/events/events";
 import Footer from "./shared/footer/Footer";
 import Header from "./shared/header/header";
+import Blog from './pages/Blog/blogs';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/blog" element={<Blog />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

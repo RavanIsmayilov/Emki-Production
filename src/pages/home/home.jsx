@@ -5,6 +5,9 @@ import BtnIcon from '../../assets/icons/svgexport-6.svg';
 import HomeSlider from '../../shared/slider/slider';
 import ResSlider from '../../shared/resSlider/resSlider';
 import Section from '../../shared/haveproject/section';
+import DiscoverEvents from '../../shared/discoverEvents/DiscoverEvents'
+import BlogsComponent from '../../shared/blogsSection/blogComponent'
+
 
 const Home = () => {
   const { t } = useTranslation();
@@ -28,6 +31,8 @@ const Home = () => {
           </div>
         </div>
         <div>
+        <DiscoverEvents/>
+        <BlogsComponent/>
           <Section/>
         </div>
       </section>
