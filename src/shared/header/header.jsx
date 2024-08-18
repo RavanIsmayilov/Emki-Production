@@ -43,7 +43,7 @@ const Header = () => {
                 <a href="/events" className="nav_lists_item">{t('header.events')}</a>
               </li>
               <li className="nav_lists_link">
-                <a href="#" className="nav_lists_item">{t('header.blog')}</a>
+                <a href="/blog" className="nav_lists_item">{t('header.blog')}</a>
               </li>
               <li className="nav_lists_link">
                 <a href="#" className="nav_lists_item">{t('header.sponsors')}</a>
