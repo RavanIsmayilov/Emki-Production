@@ -28,9 +28,9 @@
 }
 
 .blogscomponent {
+  height: 460px;
   width: 30%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   border: 2px solid rgb(25, 32, 56) !important;
   border-radius: 30px;
@@ -57,6 +57,7 @@
 }
 .blogimg img {
   width: 453px;
+  height: 351px;
   border: 0;
   transition: 0.4s all;
 }
@@ -115,6 +116,10 @@
 }
 
 .body-text {
+  height: 42px;
+  width: 411px;
+  margin: 10px 20px;
+  overflow: hidden;
   font-style: Subtitle/S1-R;
   font-family: Euclid Circular A;
   font-size: 18px !important;
@@ -124,7 +129,6 @@
 }
 
 .blogtext {
-  padding: 8px;
   transition: 0.7s all;
 }
 
@@ -152,6 +156,7 @@
   .blogimg img {
     width: 540px;
     border: 0;
+
   }
   .head {
     position: absolute;
@@ -165,6 +170,9 @@
     color: rgb(247, 249, 252);
   }
   .body-text {
+    width: 503px;
+    height: 55px;
+    margin: 10px 10px;
     font-style: Subtitle/S1-R;
     font-family: Euclid Circular A;
     font-size: 19px;
@@ -195,6 +203,8 @@
     color: rgb(25, 32, 56);
   }
 }
+
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .blogscomponent {
     width: 100%;
@@ -288,6 +298,9 @@
     color: rgb(247, 249, 252);
   }
 }
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .blogscomponent {
     width: 46%;
@@ -377,6 +390,10 @@
     color: rgb(25, 32, 56);
   }
 }
+
+
+
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .blogscomponent {
     width: 46%;

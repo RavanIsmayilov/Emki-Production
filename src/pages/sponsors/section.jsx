@@ -1,32 +1,88 @@
 import "./section.css";
 import React from 'react'
 import { Col, Row } from 'antd';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from "react"
+import { fetchPageData } from "../../api/api"
+import { slider } from "../../data/Events"
+import i18n from './../../i18n';
 
 
 
 const Sponsors = () => {
+
+  const { t } = useTranslation();
+  // const events = slider || [];
+  
+  const [events, setEvents] = useState( slider );
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+
+  const languageMap = {
+      en: "2", // English
+      az: "1", // Azerbaijani
+      ru: "3"  // Russian
+    };    
+
+  useEffect(() => {
+
+    const getData = async () => {
+      try {
+          const currentLang = i18n.language;
+          const languageId = languageMap[currentLang] || "2";
+          const pageData = await fetchPageData(languageId);
+
+          setEvents(pageData || []);
+          console.log(pageData);
+
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getData();
+  }, [i18n.language]);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
+  const targetEvent = events.find(
+      (event) => event.id.toString().slice(0,1) === languageMap[i18n.language]
+    );
+
+
   return (
     <div>
-      <div className="hero">
-        <div className="container">
-          <div className="heroAll" style={{ paddingTop: "30px" }}>
-            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-              <Col className="gutter-row col2" span={12} xs={24} md={12} lg={12}>
-                <div className="heroText" >
-                  <h1 style={{ fontSize: "50px" }}>Have a Project?</h1>
-                  <p style={{  fontSize: "20px"  }}>Show your event to the world through any platform.We are br leaders in streaming and broadcast services for events, offering consulting services and development of complete systems for our clients in event broadcasting. <br />Show yor event to the world through any platform.We are leaders in streaming and broadcast services for events,offering consulting services and development of complete systems for our clients in event broadcasting. <br />Interested in learning more about our services? Our team take the time to discuss tour objectives and help you make smart decisions that bes meet your needs <br />Interested in learning more about our services?Our team take the time to discuss your objectives and help you make smart desicions that best meet your needs.</p>
-                </div>
-              </Col>
-              <Col className="gutter-row" span={12} xs={24} md={12} lg={12}>
-                <div className="heroImg">
-                  <img src="https://emkistorage.blob.core.windows.net/web/Untitled%20design%20(2)20231021065135081.png" alt="" />
-                </div>
-              </Col>
-            </Row>
-          </div>
+    {targetEvent?.abouts.length > 0 ? (
+      targetEvent.abouts.filter(item => item.id).map((item, index) => (
+        <div key={index} className="hero">
+          <div className="container">
+            <div className="heroAll" style={{ paddingTop: "30px" }}>
+              <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                <Col className="gutter-row col2" span={12} xs={24} md={12} lg={12}>
+                  <div className="heroText" >
+                    <h1 style={{ fontSize: "50px" }}>{item.title}</h1>
+                    <p style={{  fontSize: "20px"  }}>{item.content}</p>
+                  </div>
+                </Col>
+                <Col className="gutter-row" span={12} xs={24} md={12} lg={12}>
+                  <div className="heroImg">
+                    <img src="https://emkistorage.blob.core.windows.net/web/Untitled%20design%20(2)20231021065135081.png" alt="" />
+                  </div>
+                </Col>
+              </Row>
+            </div>
 
+          </div>
         </div>
-      </div>
+
+        ))
+        ) : (
+            <p>No events available.</p> 
+        )}
 
       <section className="sponsors">
         <div className="container">
