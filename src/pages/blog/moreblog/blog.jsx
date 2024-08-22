@@ -1,11 +1,8 @@
 import "./blog.css"
 import Blogscomponent from '../blogscomponent'
-import Tomas1 from '../../../assets/images/Tomas1.png'
-import Tomas2 from '../../../assets/images/Tomas2.png'
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react"
 import { fetchPageData } from "../../../api/api"
-import { slider } from "../../../data/Events"
 import i18n from './../../../i18n';
 import { useParams } from "react-router-dom";
 
